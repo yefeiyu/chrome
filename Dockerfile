@@ -1,7 +1,8 @@
-FROM ubuntu:18.04
+#ROM ubuntu:18.04
+FROM ubuntu:latest
 
 LABEL maintainer="Tomohisa Kusano <siomiz@gmail.com>"
-
+ARG DEBIAN_FRONTEND=noninteractive
 ENV VNC_SCREEN_SIZE 1024x768
 
 COPY copyables /
