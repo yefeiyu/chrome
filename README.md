@@ -2,6 +2,9 @@ Google Chrome via VNC
 ==
 `docker run -p 127.0.0.1:5900:5900 siomiz/chrome`
 
+Added optional -e VNC_SCREEN_SIZE=1024x768 (takes <WIDTH>x<HEIGHT>) to set VNC screen size and Chrome window size.
+Closes #9.
+
  - Google Chrome, not Chromium, for the ease of Flash plugin management
  - on Xvfb, with FluxBox (no window decorations)
  - served by X11VNC (no password; assuming usage via SSH)
